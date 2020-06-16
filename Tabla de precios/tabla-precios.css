@@ -1,0 +1,71 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+h2{
+    font-weight: 400;
+}
+
+p{
+    font-weight: 300;
+}
+
+.container{
+    /*Cálculo automático del margen, se centrea.*/
+    margin: 0 auto;
+    width: 90%;    
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.columna{
+    background: rgb(238, 238, 238);
+    color: #333333;
+    border: 1px solid #333333;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 5px #888888;
+    width: 22%;
+    box-sizing: border-box;
+}
+
+.precio{
+    font-size: 50px;
+    color: #00dac7;
+}
+
+.btn-precio{
+    background: salmon;    
+    border-radius: 3px;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.btn-precio:hover{
+    background: rgb(250, 93, 75);
+}
+
+@media(max-width: 1070px){
+    .columna{
+        width: 45%;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 600px){
+    .columna{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

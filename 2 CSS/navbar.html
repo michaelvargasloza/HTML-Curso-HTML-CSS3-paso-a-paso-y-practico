@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="navbar.css">
+    <title>Navbar</title>
+</head>
+<body>
+    <nav>
+        <button class="nav-boton" onclick="accion()">Menú</button>
+
+        <a href="#" class ="nav-enlace desaparece">Inicio</a>
+        <a href="#" class ="nav-enlace desaparece">Nosotros</a>
+        <a href="#" class ="nav-enlace desaparece">Servicios</a>
+        <a href="#" class ="nav-enlace desaparece">Contactos</a>
+    </nav>
+
+    <script>
+        /*JavaScript*/
+        function accion(){
+            console.log('Está funcionando mi botón.');
+            var ancla = document.getElementsByClassName('nav-enlace');
+            for(var i = 0; i < ancla.length; i++){
+                ancla[i].classList.toggle('desaparece');    
+            }
+        }
+    </script>
+</body>
+</html>

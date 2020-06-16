@@ -1,0 +1,48 @@
+.nav-enlace{
+    /*Necesario para Flexbox.*/
+    display: inline-block;
+    background: salmon;
+    color: #ffffff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.nav-enlace:hover{
+    background: rosybrown;
+}
+
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+    /*Flexbox.*/
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-boton{
+    background: salmon;
+    color: #ffffff;
+    padding: 10px 0;
+    border: 2px solid #ffffff;
+    display: none;
+}
+
+/*Cuando el tamaño es menor a 600px se puede volver a modificar el css.*/
+@media(max-width: 500px){
+    nav{
+        background: black;
+        flex-direction: column;
+    }
+
+    .nav-enlace{
+        margin: 10px 0;
+    }
+
+    .nav-boton{
+        display: inline-block;
+    }
+
+    .desaparece{
+        display: none;
+    }
+}
